@@ -1,0 +1,164 @@
+body {
+    /* background-color:#353836; */
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* The Navig. bar */
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: #ccf381;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: white;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hoover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#me {
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #498afb;
+    /* border: 1px solid #ff3860; */
+}
+
+#me a {
+    color: #498afb;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+/* the navig bar ends here */
+
+/*Start of first div */
+
+.blue {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue;
+} */
+}
+
+.blue1 {
+    width: 60%;
+    background-color: rgb(105, 105, 208);
+}
+
+.skilled {
+    display: flex;
+    justify-content: space-between;
+
+    /* width: 50%; */
+
+}
+
+.green {
+    background-color: #ccf381;
+
+    width: 40%;
+    height: 75vh;
+}
+
+.fullstack {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+#fstack {
+    font-size: 50px;
+    color: #ccf381;
+}
+
+/*End of of first div */
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
